@@ -1,0 +1,10 @@
+<view class="flex justify-between align-center audio" wx:if="{{url}}">
+    <view bindtap="__e" class="mr-3" data-event-opts="{{[ [ 'tap',[ [ 'playMian',['$0'],['audioId'] ] ] ] ]}}">
+        <image class="icon" hidden="{{!!status}}" src="{{startPic}}"></image>
+        <image class="icon" hidden="{{!status}}" src="{{endPic}}"></image>
+    </view>
+    <view class="flex-1">
+        <slider activeColor="{{activeColor}}" bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'changeAudio',['$event'] ] ] ] ]}}" max="{{$root.g0}}" min="{{0}}" step="{{0.1}}" value="{{$root.g1}}"></slider>
+    </view>
+    <view class="ml-3">{{$root.m0}}</view>
+</view>

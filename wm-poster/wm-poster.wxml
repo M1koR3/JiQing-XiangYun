@@ -1,0 +1,3 @@
+<view class="position_fixed_main data-v-db66ced0">
+    <canvas canvasId="{{CanvasID}}" class="data-v-db66ced0" style="{{'width:'+canvasW+'px'+';'+'height:'+canvasH+'px'+';'+'margin:'+'0 auto'+';'}}"></canvas>
+</view>

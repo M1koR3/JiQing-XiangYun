@@ -1,0 +1,9 @@
+<view class="picke-value">
+    <picker bindchange="__e" bindinput="__e" data-event-opts="{{[ [ 'change',[ [ 'pickerChange',['$event'] ] ] ],[ 'input',[ [ '__set_model',[ '','pickValue','$event',[] ] ] ] ] ]}}" disabled="{{pickDisabled}}" mode="{{mode}}" range="{{list}}" rangeKey="{{rangKey}}" value="{{pickValue}}">
+        <view class="line-clamp1" wx:if="{{isPickerVal}}">
+            <text wx:if="{{mode=='selector'}}">{{list[pickValue][rangKey]}}</text>
+            <text wx:else>{{pickValue}}</text>
+        </view>
+        <view class="picke-data-null" wx:else>{{tips}}</view>
+    </picker>
+</view>

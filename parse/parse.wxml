@@ -1,0 +1,5 @@
+<view class="{{['wxParse','ql-container','ql-snow','_div',className]}}" style="{{'user-select:'+userSelect}}">
+    <view class="ql-editor _div">
+        <weixin-parse-template bind:__l="__l" node="{{node}}" vueId="{{'18d4e0cc-1-'+index}}" wx:if="{{!loading}}" wx:for="{{nodes}}" wx:for-item="node" wx:key="index"></weixin-parse-template>
+    </view>
+</view>

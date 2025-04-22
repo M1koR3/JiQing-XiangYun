@@ -1,0 +1,5 @@
+<view class="tabs-container data-v-24fb49e2" style="{{'top:'+offsetTop+navBarHeight+'px'+';'}}">
+    <scroll-view class="scrollWrap data-v-24fb49e2" scrollWithAnimation="{{true}}" scrollX="true">
+        <view bindtap="__e" class="{{['scrollItem','data-v-24fb49e2',tabIndex==index?'active':'']}}" data-current="{{index}}" data-event-opts="{{[ [ 'tap',[ [ 'sendTabItem',['$event'] ] ] ] ]}}" style="{{'width:'+$root.m0+';'+'background:'+bgColor+';'+'color:'+color+';'}}" wx:for="{{tabList}}" wx:key="index">{{item.text}}</view>
+    </scroll-view>
+</view>

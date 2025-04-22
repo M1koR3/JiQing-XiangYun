@@ -1,0 +1,10 @@
+<view class="loader data-v-7febd56c">
+    <view class="loader-inner line-scale data-v-7febd56c">
+        <view class="data-v-7febd56c" style="{{'background-color:'+loadingColor+';'}}"></view>
+        <view class="data-v-7febd56c" style="{{'background-color:'+loadingColor+';'}}"></view>
+        <view class="data-v-7febd56c" style="{{'background-color:'+loadingColor+';'}}"></view>
+        <view class="data-v-7febd56c" style="{{'background-color:'+loadingColor+';'}}"></view>
+        <view class="data-v-7febd56c" style="{{'background-color:'+loadingColor+';'}}"></view>
+    </view>
+    <vew bind:__l="__l" class="loader-tips data-v-7febd56c" vueId="1bc9ee7c-1" vueSlots="{{['default']}}">加载中</vew>
+</view>

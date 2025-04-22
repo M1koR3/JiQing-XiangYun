@@ -1,0 +1,1 @@
+.audio{padding:20rpx}.icon{height:80rpx;width:80rpx}.flex{display:-webkit-flex;display:flex;flex-direction:row}.justify-between{justify-content:between}.align-center{align-items:center}.flex-1{flex:1}.ml-3{margin-left:30rpx}.mr-3{margin-right:30rpx}
