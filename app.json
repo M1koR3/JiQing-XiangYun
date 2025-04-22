@@ -1,0 +1,85 @@
+{
+  "networkTimeout": {
+    "request": 10000
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/synoclick@2x.png",
+        "selectedIconPath": "static/tab/syclick@2x.png"
+      },
+      {
+        "pagePath": "pages/know/index",
+        "text": "知乡音",
+        "iconPath": "static/tab/zxynoclick@2x.png",
+        "selectedIconPath": "static/tab/zxyclick@2x.png"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "text": "学乡音",
+        "iconPath": "static/tab/xxynoclick@2x.png",
+        "selectedIconPath": "static/tab/xxyclick@2x.png"
+      },
+      {
+        "pagePath": "pages/hear/index",
+        "text": "听乡音",
+        "iconPath": "static/tab/txynoclick@2x.png",
+        "selectedIconPath": "static/tab/txyclick@2x.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tab/wdnoclick@2x.png",
+        "selectedIconPath": "static/tab/wdclick@2x.png"
+      }
+    ],
+    "color": "#C6C6C6",
+    "selectedColor": "#CFA871",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "fontSize": "14px",
+    "iconWidth": "34px"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "浙里学方言",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/index/search",
+    "pages/know/index",
+    "pages/know/list",
+    "pages/know/detail",
+    "pages/study/index",
+    "pages/study/rank",
+    "pages/study/mode",
+    "pages/study/reading",
+    "pages/study/examine",
+    "pages/study/basicStatement",
+    "pages/study/examineContent",
+    "pages/study/other",
+    "pages/hear/index",
+    "pages/hear/detail",
+    "pages/mine/index",
+    "pages/mine/echart",
+    "pages/mine/creativeSpace",
+    "pages/mine/creativeSpaceInfo",
+    "pages/mine/collect",
+    "pages/mine/feedback",
+    "pages/mine/help",
+    "pages/mine/helpInfo",
+    "pages/mine/message",
+    "pages/mine/news",
+    "pages/mine/set",
+    "pages/login/index",
+    "pages/login/phoneLogin",
+    "pages/login/panoUrl"
+  ]
+}

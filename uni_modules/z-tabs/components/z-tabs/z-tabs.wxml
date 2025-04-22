@@ -1,0 +1,35 @@
+<view class="z-tabs-conatiner data-v-b7ff6d6a" style="{{$root.s0}}">
+    <view class="z-tabs-left data-v-b7ff6d6a">
+        <slot name="left"></slot>
+    </view>
+    <view class="z-tabs-scroll-view-conatiner data-v-b7ff6d6a vue-ref" data-ref="z-tabs-scroll-view-conatiner">
+        <scroll-view bindscroll="__e" class="z-tabs-scroll-view data-v-b7ff6d6a vue-ref" data-event-opts="{{[ [ 'scroll',[ [ 'scroll',['$event'] ] ] ] ]}}" data-ref="z-tabs-scroll-view" scrollLeft="{{scrollLeft}}" scrollWithAnimation="{{isFirstLoaded}}" scrollX="{{true}}" showScrollbar="{{false}}">
+            <view class="z-tabs-list-container data-v-b7ff6d6a" style="{{$root.s1}}">
+                <view class="z-tabs-list data-v-b7ff6d6a" style="{{$root.s2}}">
+                    <block wx:if="{{type==='custom'}}">
+                        <view bindtap="__e" class="{{['z-tabs-item','z-tabs-item-custom','data-v-b7ff6d6a','vue-ref-in-for',currentIndex===index?'active-custom':'',currentIndex===index&&index===0?'active-custom-margin-left':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'tabsClick',[index,'$0'],[ [ ['list','',index] ] ] ] ] ] ]}}" data-ref="{{'z-tabs-item-'+index}}" id="{{'z-tabs-item-'+index}}" style="{{item.s3}}" wx:for="{{$root.l0}}" wx:key="index">
+                            <view class="z-tabs-item-title-container data-v-b7ff6d6a">
+                                <text class="{{['data-v-b7ff6d6a',true?'z-tabs-item-title':'',item[$orig].disabled?'z-tabs-item-title-disabled':'']}}" style="{{item.s4}}">{{''+( item[$orig][nameKey]||item[$orig] )+''}}</text>
+                                <text class="z-tabs-item-badge data-v-b7ff6d6a" style="{{item.s5}}" wx:if="{{item.g0}}">{{item.m0}}</text>
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <view bindtap="__e" class="z-tabs-item data-v-b7ff6d6a vue-ref-in-for" data-event-opts="{{[ [ 'tap',[ [ 'tabsClick',[index,'$0'],[ [ ['list','',index] ] ] ] ] ] ]}}" data-ref="{{'z-tabs-item-'+index}}" id="{{'z-tabs-item-'+index}}" style="{{item.s6}}" wx:for="{{$root.l1}}" wx:key="index">
+                            <view class="z-tabs-item-title-container data-v-b7ff6d6a">
+                                <text class="{{['data-v-b7ff6d6a',true?'z-tabs-item-title':'',item[$orig].disabled?'z-tabs-item-title-disabled':'']}}" style="{{item.s7}}">{{''+( item[$orig][nameKey]||item[$orig] )+''}}</text>
+                                <text class="z-tabs-item-badge data-v-b7ff6d6a" style="{{item.s8}}" wx:if="{{item.g1}}">{{item.m1}}</text>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+                <view class="z-tabs-bottom data-v-b7ff6d6a" style="{{'width:'+tabsContainerWidth+'px'+';'+'bottom:'+finalBottomSpace+'px'+';'}}" wx:if="{{type!=='custom'}}">
+                    <view class="z-tabs-bottom-dot data-v-b7ff6d6a vue-ref" data-ref="z-tabs-bottom-dot" style="{{$root.s9}}"></view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="z-tabs-right data-v-b7ff6d6a">
+        <slot name="right"></slot>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="{{['data-v-08fc2248',fixed?'zp-swiper-container zp-swiper-container-fixed':'zp-swiper-container']}}" style="{{$root.s0}}">
+    <view class="zp-safe-area-inset-bottom data-v-08fc2248" wx:if="{{cssSafeAreaInsetBottom===-1}}"></view>
+    <slot name="top" wx:if="{{zSlots.top}}"></slot>
+    <view class="zp-swiper-super data-v-08fc2248">
+        <view class="{{['data-v-08fc2248',true?'zp-swiper-left':'',isOldWebView?'zp-absoulte':'']}}" wx:if="{{zSlots.left}}">
+            <slot name="left"></slot>
+        </view>
+        <view class="{{['data-v-08fc2248',true?'zp-swiper':'',isOldWebView?'zp-absoulte':'']}}" style="{{$root.s1}}">
+            <slot></slot>
+        </view>
+        <view class="{{['data-v-08fc2248',true?'zp-swiper-right':'',isOldWebView?'zp-absoulte zp-right':'']}}" wx:if="{{zSlots.right}}">
+            <slot name="right"></slot>
+        </view>
+    </view>
+    <slot name="bottom" wx:if="{{zSlots.bottom}}"></slot>
+</view>
